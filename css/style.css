@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: "Red Hat Display", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 .bodyindex .tituloprin {
   color: white;
@@ -104,22 +108,19 @@ nav #navbarNavDropdown a.nav-link {
 
 /*--------FOOTER--------*/
 footer {
-  flex-direction: center;
-  grid-area: footer;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: auto;
 }
 footer .finalpag {
   margin: 10px;
   font-size: 16px;
   color: white;
   font-weight: lighter;
-  display: inline-block;
   text-align: center;
-  align-items: flex-end;
 }
-footer .redessociales {
-  position: absolute;
-  right: 0%;
-}
+
 footer .redessociales a {
   color: white;
   text-decoration: none;
@@ -156,26 +157,28 @@ footer .redessociales img {
     text-align: center;
     font-size: 10px;
   }
+  .redessociales{
+    margin-bottom: 10px;
+    display: inline-block;
+    align-content: center;
+  }
   footer .redessociales img {
     height: 20px;
-    width: 10px;
+    width: 20px;
   }
 }
-
 /*--------HISTORIA--------*/
-
 .cajacontenedora {
   display: flex;
   flex-direction: column;
 }
 .cajacontenedora .historiarey {
-
   justify-content: center;
   text-align: center;
   color: white;
   font-weight: bold;
-  font-size: 30px;
-  margin: 50px 40px 100px 40px;
+  font-size: 30px;  
+  margin: 0px 40px 40px 40px;
   padding: 20px;
   background: rgb(0, 0, 0);
   background: radial-gradient(circle, rgb(0, 0, 0) 2%, rgb(0, 0, 0) 34%, rgb(9, 9, 9) 41%, rgb(19, 19, 19) 45%, rgb(38, 38, 38) 51%, rgb(102, 102, 102) 60%, rgb(126, 126, 126) 62%, rgb(150, 150, 150) 67%, rgb(255, 255, 255) 100%);
@@ -184,59 +187,48 @@ footer .redessociales img {
   -webkit-border-radius: 22px 22px 22px 22px;
 }
 .cajacontenedora .historiarey_titulo {
-  display: inline-block;
   text-align: center;
   color: dark;
   font-weight: bold;
   font-size: 25px;
-  width: 200px;
   height: 60px;
   padding: 15px;
-  margin: 120px 40px 20px 120px;
+  margin: 20px 40px 20px 40px;
   background-color: white;
   border-radius: 22px 22px 22px 22px;
   -moz-border-radius: 22px 22px 22px 22px;
   -webkit-border-radius: 22px 22px 22px 22px;
 }
 .cajacontenedora .primerosaños {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex;  
+  flex-direction:row;
   justify-content: center;
   align-items: center;
-  border-radius: 22px 22px 22px 22px;
-  -moz-border-radius: 22px 22px 22px 22px;
-  -webkit-border-radius: 22px 22px 22px 22px;
+  flex-wrap: wrap; 
 }
 .cajacontenedora .primerosaños .primerosaños_texto {
-  display: inline;
   color: white;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   margin: 40px 50px 20px 50px;
-  width: 400px;
-  height: 400px;
+  width: 500px;
 }
 .cajacontenedora .primerosaños img {
-  padding: 10px;
-  margin: 5px 180px 10px 180px;
-  width: 450px;
-  height: 450px;
+  margin: 40px 50px 20px 50px;
+  width: 400px;
 }
 .cajacontenedora .primerosaños img:hover {
   border: 10px solid black;
 }
 .cajacontenedora .primeralbum_titulo {
-  display: inline-block;
   text-align: center;
   color: dark;
   font-weight: bold;
   font-size: 25px;
-  width: 500px;
   height: 60px;
   padding: 15px;
-  margin: 20px 40px 20px 120px;
+  margin: 20px 40px 20px 40px;
   background-color: white;
   border-radius: 22px 22px 22px 22px;
   -moz-border-radius: 22px 22px 22px 22px;
@@ -247,22 +239,21 @@ footer .redessociales img {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 .cajacontenedora .primeralbum .primeralbum_texto {
-  display: inline;
+  justify-content: center;
   color: white;
   font-weight: normal;
-  font-size: 15px;
-  text-align: left;
-  margin: 150px 50px 100px 120px;
-  width: 400px;
-  height: 400px;
+  font-size: 20px;
+  text-align: center;
+  margin: 100px 50px 100px 50px;
+  width: 500px;
 }
 .cajacontenedora .primeralbum img {
-  width: 500px;
+  width: 400px;
   margin: 50px;
-}
+} 
 .cajacontenedora .primeralbum img:hover {
   border: 10px solid black;
 }
@@ -286,22 +277,58 @@ footer .redessociales img {
   flex-wrap: wrap;
 }
 .cajacontenedora .contenedor_thriller .contenedor_thriller_texto {
+  justify-content: center;
   color: white;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
   margin: 70px 50px 50px 70px;
-  width: 400px;
-  height: 400px;
+  width: 500px;
 }
 .cajacontenedora .contenedor_thriller img {
-  width: 700px;
-  margin: 20px;
+  width: 500px;
+  margin-left: 40px;
 }
 .cajacontenedora .contenedor_thriller img:hover {
   border: 10px solid black;
 }
-
+@media screen and (max-width: 1000px){
+  .cajacontenedora .primerosaños img {
+    display: block;
+    width: 250px;
+    margin: 10px;
+  }
+  .cajacontenedora .historiarey {
+    font-size: 20px;
+  }
+  .cajacontenedora .primeralbum img{
+    width: 300px;
+    margin: 10px;
+  }
+  .cajacontenedora .primeralbum .primeralbum_texto{
+    font-size: 15px;
+    margin: 10px;
+  }
+  .cajacontenedora .primerosaños .primerosaños_texto {
+   margin: 10px;
+   font-size: 15px;
+  }
+  .cajacontenedora .thriller_titulo {
+  font-size: 20px;
+  }
+  .cajacontenedora_thriller{
+  flex-direction: column;
+  }
+  .cajacontenedora .contenedor_thriller img {
+    width: 300px;
+    margin: 0px 10px 25px 10px;
+  }
+  .cajacontenedora .contenedor_thriller .contenedor_thriller_texto {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px;
+  }
+}
 /*--------DISCOGRAFIA--------*/
 .banner {
   width: auto;
@@ -400,7 +427,6 @@ footer .redessociales img {
   .album-responsive .disco_texto1__texto2 {
     text-align: center;
     font-size: 10px;
-    margin-left: 10px;
   }
 }
 /*--------GALERIA--------*/
@@ -497,16 +523,23 @@ footer .redessociales img {
   vertical-align: top;
   text-align: center;
 }
+.datos_enviar{
+  margin-top: 10px;
+}
 @media screen and (max-width: 1000px) {
   .contenedor_contacto img {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     margin-top: 15px;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
   }
   .contenedor_contacto {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   img:hover {
     border: none;
