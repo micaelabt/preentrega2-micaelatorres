@@ -1,0 +1,159 @@
+.cajacontenedora{
+    display:flex;
+    flex-direction:column;
+    .historiarey{
+        justify-content:center;
+        text-align:center;
+        color:$color-text;
+        font-weight:bold;
+        font-size:30px;  
+        margin:0px 40px 40px 40px;
+        padding:20px;
+        background:$color-background;
+        background:radial-gradient(circle, rgb(0, 0, 0) 2%, rgb(0, 0, 0) 34%, rgb(9, 9, 9) 41%, rgb(19, 19, 19) 45%, rgb(38, 38, 38) 51%, rgb(102, 102, 102) 60%, rgb(126, 126, 126) 62%, rgb(150, 150, 150) 67%, rgb(255, 255, 255) 100%);
+        border-radius:22px 22px 22px 22px;
+        -moz-border-radius:22px 22px 22px 22px;
+        -webkit-border-radius:22px 22px 22px 22px;
+    }
+    .historiarey_titulo {
+        text-align:center;
+        color:dark;
+        font-weight:bold;
+        font-size:25px;
+        height:60px;
+        padding:15px;
+        margin:20px 40px 20px 40px;
+        background-color:$color-background-secondary;
+        border-radius:22px 22px 22px 22px;
+        -moz-border-radius:22px 22px 22px 22px;
+        -webkit-border-radius:22px 22px 22px 22px;
+    }
+    .primerosaños {
+        display:flex;  
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        .primerosaños_texto {
+            color:$color-text;
+            font-weight:normal;
+            font-size:20px;
+            text-align:center;
+            margin:40px 50px 20px 50px;
+            width:500px;
+        }
+        img {
+            margin:40px 50px 20px 50px;
+            width:400px;
+            &:hover {
+                border:10px solid black;
+            } 
+        }
+    }
+    .primeralbum_titulo {
+        text-align:center;
+        color:dark;
+        font-weight:bold;
+        font-size:25px;
+        height:60px;
+        padding:15px;
+        margin:20px 40px 20px 40px;
+        background-color:$color-background-secondary;
+        border-radius:22px 22px 22px 22px;
+        -moz-border-radius:22px 22px 22px 22px;
+        -webkit-border-radius:22px 22px 22px 22px;
+      }
+    .primeralbum{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:row;
+        flex-wrap:wrap;
+        img {
+            width:400px;
+            margin:50px;
+            &:hover{
+                border:10px solid black;
+            }
+        }
+        .primeralbum_texto {
+            justify-content:center;
+            color:$color-text;
+            font-weight:normal;
+            font-size:20px;
+            text-align:center;
+            margin:100px 50px 100px 50px;
+            width: 500px;
+        }
+    }
+    .thriller_titulo{
+        text-align:center;
+        color:dark;
+        font-weight:bold;
+        font-size:25px;
+        background-color:$color-background-secondary;
+        padding-top:15px;
+        height:60px;
+        margin:50px 40px 30px 40px;
+        border-radius:22px 22px 22px 22px;
+        -moz-border-radius:22px 22px 22px 22px;
+        -webkit-border-radius:22px 22px 22px 22px;    
+    }
+    .contenedor_thriller{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        .contenedor_thriller_texto{
+            justify-content:center;
+            color:$color-text;
+            font-weight:normal;
+            font-size:20px;
+            text-align:center;
+            margin:70px 50px 50px 70px;
+            width:500px;
+            }
+        img {
+            width:500px;
+            margin-left:40px;
+            &:hover {
+                border:10px solid black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .cajacontenedora .historiarey{
+        font-size:20px;
+      }
+    .cajacontenedora .primerosaños .primerosaños_texto{
+        margin:10px;
+        font-size:15px;
+    }
+    .cajacontenedora .primerosaños img{
+      display:block;
+      width:250px;
+      margin:10px;
+    }
+    .cajacontenedora .primeralbum img{
+      width:300px;
+      margin:10px;
+    }
+    .cajacontenedora .primeralbum .primeralbum_texto{
+      font-size:15px;
+      margin:10px;
+    }
+    .cajacontenedora .thriller_titulo{
+    font-size:20px;
+    }
+    .cajacontenedora .contenedor_thriller img{
+      width:300px;
+      margin:0px 10px 25px 10px;
+    }
+    .cajacontenedora .contenedor_thriller .contenedor_thriller_texto {
+      font-size:15px;
+      text-align:center;
+      margin:10px;
+    }
+  }

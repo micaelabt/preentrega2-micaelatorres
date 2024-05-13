@@ -1,0 +1,46 @@
+footer{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+    margin-top:auto;
+        a{
+            color:$color-text;
+            text-decoration:none;
+            padding:20px;
+            content:icon;
+            &:hover {
+                background-color:red;
+            }
+        }
+        img {
+            width:30px;
+        }
+    .finalpag {
+        margin: 10px;
+        font-size: 16px;
+        color: $color-text;
+        font-weight:lighter;
+        text-align:center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    footer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        .finalpag{
+            width:40%;
+            text-align:center;
+            font-size:10px;
+        }
+        .redessociales{
+            margin-bottom:10px;
+            display:inline-block;
+            align-content:center;
+            img {
+                height:20px;
+                width:20px;
+            }
+        }
+    }
+}
