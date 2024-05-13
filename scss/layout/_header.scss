@@ -11,7 +11,7 @@ header{
             justify-content: end;
             .nav-item {
                 &:hover {
-                    background-color: red;
+                    background-color:$color-background-hover;
                 }    
                 a.nav-link {
                     color:$color-text;

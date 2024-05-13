@@ -17,7 +17,7 @@
     }
     .historiarey_titulo {
         text-align:center;
-        color:dark;
+        color:$color-text;
         font-weight:bold;
         font-size:25px;
         height:60px;
@@ -35,7 +35,7 @@
         align-items:center;
         flex-wrap:wrap;
         .primerosaños_texto {
-            color:$color-text;
+            color:$color-text-secondary;
             font-weight:normal;
             font-size:20px;
             text-align:center;
@@ -52,7 +52,7 @@
     }
     .primeralbum_titulo {
         text-align:center;
-        color:dark;
+        color:$color-text-secondary;
         font-weight:bold;
         font-size:25px;
         height:60px;
@@ -78,7 +78,7 @@
         }
         .primeralbum_texto {
             justify-content:center;
-            color:$color-text;
+            color:$color-text-secondary;
             font-weight:normal;
             font-size:20px;
             text-align:center;
@@ -88,7 +88,7 @@
     }
     .thriller_titulo{
         text-align:center;
-        color:dark;
+        color:$color-text-secondary;
         font-weight:bold;
         font-size:25px;
         background-color:$color-background-secondary;
@@ -122,7 +122,6 @@
         }
     }
 }
-
 @media screen and (max-width: 1000px){
     .cajacontenedora .historiarey{
         font-size:20px;

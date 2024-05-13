@@ -9,7 +9,7 @@ footer{
             padding:20px;
             content:icon;
             &:hover {
-                background-color:red;
+                background-color:$color-background-hover;
             }
         }
         img {
